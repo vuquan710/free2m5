@@ -31,7 +31,7 @@
 
 </head>
 <body class="admin-layout no-skin">
-@widget('AdminNavBar')
+@include('AdminView.Widgets.navbarAdmin')
 @section('sidebar')
 @show
 <div class="main-container ace-save-state" id="main-container">
@@ -45,6 +45,7 @@
 <script src="{!! URL::asset('js/admin/ace-extra.min.js') !!}"></script>
 <script src="{!! URL::asset('js/admin/ace-elements.min.js') !!}"></script>
 <script src="{!! URL::asset('js/admin/ace.min.js') !!}"></script>
+<script src="{!! URL::asset('js/admin/script.js') !!}"></script>
 <script src="{!! URL::asset('js/common.js') !!}"></script>
 @yield('script')
 </body>

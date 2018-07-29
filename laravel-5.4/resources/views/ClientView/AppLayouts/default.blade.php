@@ -31,13 +31,13 @@
 
 </head>
 <body class="admin-layout no-skin">
-@widget('AdminNavBar')
+@include('ClientView.Widgets.navbarAdmin')
 @section('sidebar')
 @show
 <div class="main-container ace-save-state" id="main-container">
-    @include('AdminView.Share.sidebarAdmin')
+    @include('ClientView.Share.sidebarAdmin')
     @yield('content')
-    @include('AdminView.Share.footer')
+    @include('ClientView.Share.footer')
 </div>
 <script src="{!! URL::asset('js/jquery-3.2.1.min.js') !!}"></script>
 <script src="{!! URL::asset('js/bootstrap.min.js') !!}"></script>
@@ -45,6 +45,7 @@
 <script src="{!! URL::asset('js/admin/ace-extra.min.js') !!}"></script>
 <script src="{!! URL::asset('js/admin/ace-elements.min.js') !!}"></script>
 <script src="{!! URL::asset('js/admin/ace.min.js') !!}"></script>
+<script src="{!! URL::asset('js/admin/script.js') !!}"></script>
 <script src="{!! URL::asset('js/common.js') !!}"></script>
 @yield('script')
 </body>

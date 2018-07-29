@@ -1,4 +1,4 @@
-@extends('AdminView.AppLayouts.default')
+@extends('ClientView.AppLayouts.default')
 
 @section('title', __('Dashboard'))
 
@@ -8,9 +8,9 @@
 @section('content')
     <div class="main-content">
         <div class="main-content-inner">
-            @include('AdminView.Share.breadcrumbs')
+            @include('ClientView.Share.breadcrumbs')
             <div class="page-content">
-                HOME PAGE
+                Client PAGE
             </div><!-- /.page-content -->
 
         </div>
